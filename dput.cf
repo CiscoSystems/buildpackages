@@ -1,0 +1,5 @@
+[cisco]
+method   = ftp
+fqdn     = apt.ctocllab.cisco.com
+login    = anonymous
+incoming = /%(cisco)s/

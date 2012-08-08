@@ -48,7 +48,7 @@ def handle_project(config, state, workdir, repo, series, keyid, name):
                                       series, keyid)
 
         if repo:
-            print ('dput', repo,
+            run_cmd('dput', repo,
                      '%s/%s_%s_source.changes' % (workdir, name, pkg_version))
 
         state.set(name, 'code_revision', available_code_revision)
